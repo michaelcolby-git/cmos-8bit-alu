@@ -1,54 +1,69 @@
-# 8-bit CMOS ALU
+![8-bit CMOS ALU](assets/header.svg)
 
-A reproducible reference design connecting static CMOS gates to an 8-bit ripple-carry
-ALU, with an independently checked RTL model and transistor simulation scripts.
-Read [PROVENANCE.md](PROVENANCE.md): this is a new reconstruction, not original Cadence evidence.
+# CMOS 8-bit Arithmetic Logic Unit
 
-## Run
+[![Verify](https://github.com/michaelcolby-git/cmos-8bit-alu/actions/workflows/verify.yml/badge.svg)](https://github.com/michaelcolby-git/cmos-8bit-alu/actions/workflows/verify.yml)
 
-```sh
-python scripts/verify.py --spice
-```
+A static CMOS ALU built from inverters, NAND/NOR gates, multiplexers, and full adders.
+An RTL model establishes the functional contract; ngspice checks the transistor
+hierarchy and measures a sensitized ripple-carry path.
 
-Requires Python 3.10+, Icarus Verilog and ngspice on PATH. Without `--spice`, runs
-524,288 digital vectors covering all inputs and all eight operations, checking result,
-unsigned carry/no-borrow, signed overflow, and zero. Analog checks use directed vectors
-and supply/temperature cases; digital exhaustiveness does not imply analog exhaustiveness.
+| Digital verification | Transistor verification | Nominal measured path |
+|---|---|---|
+| 524,288 exhaustive vectors | 192 vectors across 3 voltage/temperature cases | 0.525 ns |
+
+**[CMOS netlist](spice/alu8.cir) · [Gate library](spice/gates.cir) · [Measurements](docs/MEASUREMENTS.md) · [Results](results/VALIDATION.md)**
 
 ## Design
 
 ```mermaid
 flowchart LR
-  A["A, B"] --> R["8 ripple full adders: B XOR SUB, carry-in SUB"]
-  A --> L["AND / OR / XOR / NOT / shifts"]
-  R --> M["Static CMOS mux tree"]
+  A["A · 8 bits"] --> FA["Ripple-carry adder"]
+  B["B · 8 bits"] --> SUB["B XOR SUB"] --> FA
+  A --> L["Logic & fixed shifts"]
+  B --> L
+  FA --> M["CMOS multiplexer tree"]
   L --> M
   OP["3-bit operation"] --> M
-  M --> Y["8-bit result + flags"]
+  M --> Y["Result · carry · overflow · zero"]
 ```
 
-| op | Operation | carry | overflow |
+| Opcode | Result | Carry flag | Signed overflow |
 |---|---|---|---|
-| 0 | A + B | Unsigned carry | Signed addition overflow |
-| 1 | A - B | 1 means no borrow | Signed subtraction overflow |
-| 2/3/4 | AND / OR / XOR | 0 | 0 |
+| 0 | A + B | Unsigned carry-out | Addition overflow |
+| 1 | A − B | 1 indicates no borrow | Subtraction overflow |
+| 2 / 3 / 4 | AND / OR / XOR | 0 | 0 |
 | 5 | NOT A | 0 | 0 |
-| 6/7 | Logical left / right by one | Bit shifted out | 0 |
+| 6 / 7 | Logical left / right by one | Shifted-out bit | 0 |
 
-- [RTL](rtl/alu8.v) and [exhaustive testbench](tests/tb_alu8.v)
-- [CMOS gate library](spice/gates.cir) and [8-bit netlist](spice/alu8.cir)
-- [Characterization](scripts/characterize.py) and [measurement definitions](docs/MEASUREMENTS.md)
+Subtraction reuses the adder by complementing B and setting carry-in. The zero flag
+reduces all result bits; arithmetic overflow is the XOR of the carries into and out
+of the sign bit. [Design notes](docs/DESIGN_NOTES.md) explain these choices.
 
-Generic Level-1 MOS models, illustrative 0.18 um channel length, nominal 1.8 V,
-and explicit output capacitance. These are not a calibrated process or timing sign-off.
-The scripts produce actual current-run measurements in `build/`; no claim is made
-that they reproduce 0.9 ns, 45 uW, or a 17% improvement from the resume.
+## Reproduce the results
 
-## Measured validation
+Requirements: Python 3.10+, Icarus Verilog, and ngspice on PATH.
 
-524,288 digital vectors and 192 transistor-level vectors passed. At 1.8 V / 25 C,
-the sampled carry-path delay was **0.525 ns** and total average supply
-power was **64.47 uW** under the included generic model.
-These are current simulation results; see the [conditions and logs](results/VALIDATION.md).
+```sh
+python -m unittest discover -s tests -p "test_*.py" -v
+python scripts/verify.py --spice
+```
 
-![CMOS carry-path waveform](results/carry-path.svg)
+The command generates the netlist, runs exhaustive RTL checks, verifies CMOS output
+levels, and writes measured JSON, raw waveforms, logs, and an SVG to `build/`.
+The optional executable overrides are `IVERILOG`, `VVP`, and `NGSPICE`.
+
+## Measured carry-path response
+
+![Measured carry-path response](results/carry-path.svg)
+
+At **1.8 V, 25 °C, 10 fF per output, and 100 ps input edges**, the included generic
+Level-1 model produced **0.525110 ns** maximum delay over the two sampled carry-path
+transitions and **64.470652 µW** total average supply power over 10–90 ns.
+
+These are sampled-path measurements from this model and stimulus. They are not
+foundry sign-off, an exhaustive analog worst case, or leakage-subtracted switching
+power. The [measurement contract](docs/MEASUREMENTS.md) defines the crossings,
+integration window, model, and functional acceptance thresholds.
+
+Implementation origin and measurement scope are recorded in [PROVENANCE.md](PROVENANCE.md).

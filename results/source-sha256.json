@@ -1,17 +1,16 @@
 {
-  "recorded_at_utc": "2026-09-13T03:25:13.481191+00:00",
   "sha256": {
-    "rtl/alu8.v": "7469397696ab6f0e307bfbdde622c70daf3b20cd442a1f2b5307449a9537c2ab",
-    "spice/alu8.cir": "cf9d4cba8181963229db0ece1144680f3f0a933f6f457ddd7dd9da33978c1b44",
-    "spice/gates.cir": "4c5bf4b5c0bb224161757feda7ca37ef3cc9acf681eec7c0757b605c4e15afb7",
-    "scripts/characterize.py": "1685ee5f0f807e17308f6f4b1e5a4ef66fd8f9dba2c586f337ce1313c435ef7b",
-    "scripts/compare_runs.py": "2549db545094c0a67cfb90827e5a6af39ead4efb8d83fb123841dd433b3ff0e6",
-    "scripts/generate_netlist.py": "566e855ca4ef6aae79d2099dc9d73efb2356281fddd74a05fda39a1595bb7afc",
-    "scripts/spice_utils.py": "4cd0e510ed941cdb81d4d06441d56fc009e4305505cdb201291230b33938e2a6",
-    "scripts/verify.py": "3eebbc712a5d9173c6b17890ce5b0e9763af5e296a97ff5c08441a27a30404a4",
-    "tests/tb_alu8.v": "be25886d67fc3969c4ee4760eae642252cd82670f8c0425da75b0314f932fade",
-    "tests/test_comparison.py": "b519f7f4f9f31b5856084923a9dc8c2efeb024475e5bd326b70df1fb07c4223c",
-    "tests/test_measurements.py": "3d1ec949b1a6f1fbb72659b2970c4b9ed8f06c217457219aa2d852bf1d0f0fe3",
-    ".github/workflows/verify.yml": "79ad2f520465e4b1c67d8ae7ebe24b20bfbc0ec2b124a0a5ea8677192d691703"
+    "rtl/alu8.v": "5f1c842c675fe49dd86b09ac62984f97e87c8a89d0cce4cf90e5fd5bc24d7020",
+    "spice/alu8.cir": "dab34e6f02173e011d7b2e76afc35bffae4c14c656ed67e8a25111bf00d3e50f",
+    "spice/gates.cir": "1d2830ee3c5b3d10e5955d11f20ffb71dfb8db91e31bfe0d2eed8ce9883c9bfc",
+    "scripts/characterize.py": "d2b8246262f14211080ebb9b67bf3a4ae8ae61765ab6ac3853531ff03fc3e440",
+    "scripts/compare_runs.py": "da4db122988bb826f9d9962834d142a2d29f7cdb247cdefec2ce123ef992fc7a",
+    "scripts/generate_netlist.py": "dc6fdc66f5ab73ad805f72e1e2e07b244a5763aa2fc5bdbfc53aec294d0a5d18",
+    "scripts/spice_utils.py": "db720ff0ff32aaf458274e573f53e9a2d3d775305e9cff5832eaa9541e839b28",
+    "scripts/verify.py": "6830e05ef6ccd3126c27eaec0881235069e117937d18d718a8dcc8d920b75ff8",
+    "tests/tb_alu8.v": "b791aa711a658d2387ac764abde47455b63db96f53435905097bf38d08817d40",
+    "tests/test_comparison.py": "8a34f0ab9b05339b2389b6d1a756c169e80f9fe153f4c7b81680d0d6e2575638",
+    "tests/test_measurements.py": "30d9d03d6271d4cf673d1f8a5e9f9301460e3434c7fc90910168bbbd2b0a7620",
+    ".github/workflows/verify.yml": "722db96270ae4a74e43b32babde88146a748921da68f29aaffc66c1aa02bd144"
   }
 }
