@@ -1,23 +1,23 @@
 * Generic educational static CMOS library. NOT a foundry PDK.
 * Dimensions are illustrative; SCALE changes all widths, not process geometry.
 .param SCALE=1
-.model N NMOS (LEVEL=1 VTO=0.45 KP=120u LAMBDA=0.04 CGSO=0.2n CGDO=0.2n)
-.model P PMOS (LEVEL=1 VTO=-0.45 KP=50u LAMBDA=0.04 CGSO=0.2n CGDO=0.2n)
+.model CMOS_N NMOS (LEVEL=1 VTO=0.45 KP=120u LAMBDA=0.04 CGSO=0.2n CGDO=0.2n)
+.model CMOS_P PMOS (LEVEL=1 VTO=-0.45 KP=50u LAMBDA=0.04 CGSO=0.2n CGDO=0.2n)
 .subckt inv a y vdd vss
-Mp y a vdd vdd P W={2.4u*SCALE} L=0.18u
-Mn y a vss vss N W={1u*SCALE} L=0.18u
+Mp y a vdd vdd CMOS_P W={2.4u*SCALE} L=0.18u
+Mn y a vss vss CMOS_N W={1u*SCALE} L=0.18u
 .ends inv
 .subckt nand2 a b y vdd vss
-Mp1 y a vdd vdd P W={2.4u*SCALE} L=0.18u
-Mp2 y b vdd vdd P W={2.4u*SCALE} L=0.18u
-Mn1 y a n vss N W={2u*SCALE} L=0.18u
-Mn2 n b vss vss N W={2u*SCALE} L=0.18u
+Mp1 y a vdd vdd CMOS_P W={2.4u*SCALE} L=0.18u
+Mp2 y b vdd vdd CMOS_P W={2.4u*SCALE} L=0.18u
+Mn1 y a n vss CMOS_N W={2u*SCALE} L=0.18u
+Mn2 n b vss vss CMOS_N W={2u*SCALE} L=0.18u
 .ends nand2
 .subckt nor2 a b y vdd vss
-Mp1 n a vdd vdd P W={4.8u*SCALE} L=0.18u
-Mp2 y b n vdd P W={4.8u*SCALE} L=0.18u
-Mn1 y a vss vss N W={1u*SCALE} L=0.18u
-Mn2 y b vss vss N W={1u*SCALE} L=0.18u
+Mp1 n a vdd vdd CMOS_P W={4.8u*SCALE} L=0.18u
+Mp2 y b n vdd CMOS_P W={4.8u*SCALE} L=0.18u
+Mn1 y a vss vss CMOS_N W={1u*SCALE} L=0.18u
+Mn2 y b vss vss CMOS_N W={1u*SCALE} L=0.18u
 .ends nor2
 .subckt and2 a b y vdd vss
 Xn a b n vdd vss nand2

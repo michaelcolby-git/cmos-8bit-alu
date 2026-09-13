@@ -2,7 +2,7 @@
   "sha256": {
     "rtl/alu8.v": "5f1c842c675fe49dd86b09ac62984f97e87c8a89d0cce4cf90e5fd5bc24d7020",
     "spice/alu8.cir": "dab34e6f02173e011d7b2e76afc35bffae4c14c656ed67e8a25111bf00d3e50f",
-    "spice/gates.cir": "1d2830ee3c5b3d10e5955d11f20ffb71dfb8db91e31bfe0d2eed8ce9883c9bfc",
+    "spice/gates.cir": "d6e32f975b1cd7089293ef5988fa76e64e5555f1a7cb06fdd68d7994c523e612",
     "scripts/characterize.py": "d2b8246262f14211080ebb9b67bf3a4ae8ae61765ab6ac3853531ff03fc3e440",
     "scripts/compare_runs.py": "da4db122988bb826f9d9962834d142a2d29f7cdb247cdefec2ce123ef992fc7a",
     "scripts/generate_netlist.py": "dc6fdc66f5ab73ad805f72e1e2e07b244a5763aa2fc5bdbfc53aec294d0a5d18",
