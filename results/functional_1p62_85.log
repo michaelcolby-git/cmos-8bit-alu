@@ -1,0 +1,954 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: alu reference characterization
+
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                       1.62
+xalu.xbsub0.n0                            1.62
+b0                                           0
+op0                                          0
+xalu.xbsub0.x0.n                  -3.82806e-19
+xalu.xbsub0.n1                            1.62
+xalu.xbsub0.x1.n                 -1.23577e-250
+xalu.xbsub0.n2                            1.62
+xalu.xbsub0.x2.n                 -1.23577e-250
+xalu.bs0                           6.36908e-08
+xalu.xbsub0.x3.n                   3.18454e-08
+xalu.xfa0.x0.n0                           1.62
+a0                                           0
+xalu.xfa0.x0.x0.n                 -1.20004e-18
+xalu.xfa0.x0.n1                           1.62
+xalu.xfa0.x0.x1.n                 5.94455e-247
+xalu.xfa0.x0.n2                           1.62
+xalu.xfa0.x0.x2.n                 5.94458e-247
+xalu.xfa0.p                        6.36908e-08
+xalu.xfa0.x0.x3.n                  3.18454e-08
+xalu.xfa0.x1.n0                           1.62
+xalu.xfa0.x1.x0.n                 -2.08221e-18
+xalu.xfa0.x1.n1                           1.62
+xalu.xfa0.x1.x1.n                 1.98429e-208
+xalu.xfa0.x1.n2                           1.62
+xalu.xfa0.x1.x2.n                -3.52901e-213
+xalu.s0                            6.36908e-08
+xalu.xfa0.x1.x3.n                  3.18454e-08
+xalu.xfa0.x2.n                            1.62
+xalu.xfa0.x2.xn.n                 -1.20004e-18
+xalu.xfa0.g                        3.18454e-08
+xalu.xfa0.x3.n                            1.62
+xalu.xfa0.x3.xn.n                 -2.08221e-18
+xalu.xfa0.h                        3.18454e-08
+xalu.xfa0.x4.xn.n                         1.62
+xalu.xfa0.x4.n                            1.62
+xalu.c1                            3.18454e-08
+xalu.xand0.n                              1.62
+xalu.xand0.xn.n                   -3.82806e-19
+xalu.and0                          3.18454e-08
+xalu.xor0.xn.n                            1.62
+xalu.xor0.n                               1.62
+xalu.or0                           3.18454e-08
+xalu.xxor0.n0                             1.62
+xalu.xxor0.x0.n                   -3.82806e-19
+xalu.xxor0.n1                             1.62
+xalu.xxor0.x1.n                  -1.23577e-250
+xalu.xxor0.n2                             1.62
+xalu.xxor0.x2.n                  -1.23577e-250
+xalu.xor0                          6.36908e-08
+xalu.xxor0.x3.n                    3.18454e-08
+xalu.not0                                 1.62
+xalu.xlogic0.sn                           1.62
+xalu.xlogic0.n0                           1.62
+xalu.xlogic0.x0.n                 6.41129e-253
+xalu.xlogic0.n1                           1.62
+xalu.xlogic0.x1.n                  4.27937e-20
+xalu.l0                            6.36908e-08
+xalu.xlogic0.x2.n                  3.18454e-08
+xalu.xunary0.sn                           1.62
+xalu.xunary0.n0                           1.62
+xalu.xunary0.x0.n                 7.73204e-246
+xalu.xunary0.n1                           1.62
+xalu.xunary0.x1.n                      1.22767
+xalu.u0                            6.36908e-08
+xalu.xunary0.x2.n                  3.18454e-08
+xalu.xshift0.sn                           1.62
+xalu.xshift0.n0                           1.62
+xalu.xshift0.x0.n                -3.02271e-255
+xalu.xshift0.n1                           1.62
+a1                                           0
+xalu.xshift0.x1.n                 -3.82806e-19
+xalu.h0                            6.36908e-08
+xalu.xshift0.x2.n                  3.18454e-08
+xalu.xlo0.sn                              1.62
+op1                                          0
+xalu.xlo0.n0                              1.62
+xalu.xlo0.x0.n                   -1.85484e-201
+xalu.xlo0.n1                              1.62
+xalu.xlo0.x1.n                    -1.21078e-18
+xalu.lo0                           6.36908e-08
+xalu.xlo0.x2.n                     3.18454e-08
+xalu.xhi0.sn                              1.62
+xalu.xhi0.n0                              1.62
+xalu.xhi0.x0.n                    5.47684e-252
+xalu.xhi0.n1                              1.62
+xalu.xhi0.x1.n                    -3.20028e-18
+xalu.hi0                           6.36908e-08
+xalu.xhi0.x2.n                     3.18454e-08
+xalu.xout0.sn                             1.62
+op2                                          0
+xalu.xout0.n0                             1.62
+xalu.xout0.x0.n                  -8.15574e-189
+xalu.xout0.n1                             1.62
+xalu.xout0.x1.n                    1.28174e-18
+y0                                 6.36908e-08
+xalu.xout0.x2.n                    3.18454e-08
+xalu.xbsub1.n0                            1.62
+b1                                           0
+xalu.xbsub1.x0.n                  -3.82806e-19
+xalu.xbsub1.n1                            1.62
+xalu.xbsub1.x1.n                 -1.23577e-250
+xalu.xbsub1.n2                            1.62
+xalu.xbsub1.x2.n                 -1.23577e-250
+xalu.bs1                           6.36908e-08
+xalu.xbsub1.x3.n                   3.18454e-08
+xalu.xfa1.x0.n0                           1.62
+xalu.xfa1.x0.x0.n                 -1.48507e-19
+xalu.xfa1.x0.n1                           1.62
+xalu.xfa1.x0.x1.n                 5.94455e-247
+xalu.xfa1.x0.n2                           1.62
+xalu.xfa1.x0.x2.n                 5.94458e-247
+xalu.xfa1.p                        6.36908e-08
+xalu.xfa1.x0.x3.n                  3.18454e-08
+xalu.xfa1.x1.n0                           1.62
+xalu.xfa1.x1.x0.n                 -2.23865e-18
+xalu.xfa1.x1.n1                           1.62
+xalu.xfa1.x1.x1.n                -4.59529e-203
+xalu.xfa1.x1.n2                           1.62
+xalu.xfa1.x1.x2.n                -4.37172e-221
+xalu.s1                            6.36908e-08
+xalu.xfa1.x1.x3.n                  3.18454e-08
+xalu.xfa1.x2.n                            1.62
+xalu.xfa1.x2.xn.n                 -1.48507e-19
+xalu.xfa1.g                        3.18454e-08
+xalu.xfa1.x3.n                            1.62
+xalu.xfa1.x3.xn.n                 -2.23865e-18
+xalu.xfa1.h                        3.18454e-08
+xalu.xfa1.x4.xn.n                         1.62
+xalu.xfa1.x4.n                            1.62
+xalu.c2                            3.18454e-08
+xalu.xand1.n                              1.62
+xalu.xand1.xn.n                   -3.82806e-19
+xalu.and1                          3.18454e-08
+xalu.xor1.xn.n                            1.62
+xalu.xor1.n                               1.62
+xalu.or1                           3.18454e-08
+xalu.xxor1.n0                             1.62
+xalu.xxor1.x0.n                   -3.82806e-19
+xalu.xxor1.n1                             1.62
+xalu.xxor1.x1.n                  -1.23577e-250
+xalu.xxor1.n2                             1.62
+xalu.xxor1.x2.n                  -1.23577e-250
+xalu.xor1                          6.36908e-08
+xalu.xxor1.x3.n                    3.18454e-08
+xalu.not1                                 1.62
+xalu.xlogic1.sn                           1.62
+xalu.xlogic1.n0                           1.62
+xalu.xlogic1.x0.n                 6.41129e-253
+xalu.xlogic1.n1                           1.62
+xalu.xlogic1.x1.n                  4.27937e-20
+xalu.l1                            6.36908e-08
+xalu.xlogic1.x2.n                  3.18454e-08
+xalu.xunary1.sn                           1.62
+xalu.xunary1.n0                           1.62
+xalu.xunary1.x0.n                 7.73204e-246
+xalu.xunary1.n1                           1.62
+xalu.xunary1.x1.n                      1.22767
+xalu.u1                            6.36908e-08
+xalu.xunary1.x2.n                  3.18454e-08
+xalu.xshift1.sn                           1.62
+xalu.xshift1.n0                           1.62
+xalu.xshift1.x0.n                -3.02271e-255
+xalu.xshift1.n1                           1.62
+a2                                           0
+xalu.xshift1.x1.n                 -3.82806e-19
+xalu.h1                            6.36908e-08
+xalu.xshift1.x2.n                  3.18454e-08
+xalu.xlo1.sn                              1.62
+xalu.xlo1.n0                              1.62
+xalu.xlo1.x0.n                   -9.33819e-227
+xalu.xlo1.n1                              1.62
+xalu.xlo1.x1.n                    -1.21078e-18
+xalu.lo1                           6.36908e-08
+xalu.xlo1.x2.n                     3.18454e-08
+xalu.xhi1.sn                              1.62
+xalu.xhi1.n0                              1.62
+xalu.xhi1.x0.n                    5.47684e-252
+xalu.xhi1.n1                              1.62
+xalu.xhi1.x1.n                    -3.20028e-18
+xalu.hi1                           6.36908e-08
+xalu.xhi1.x2.n                     3.18454e-08
+xalu.xout1.sn                             1.62
+xalu.xout1.n0                             1.62
+xalu.xout1.x0.n                  -4.17538e-214
+xalu.xout1.n1                             1.62
+xalu.xout1.x1.n                    1.28174e-18
+y1                                 6.36908e-08
+xalu.xout1.x2.n                    3.18454e-08
+xalu.xbsub2.n0                            1.62
+b2                                           0
+xalu.xbsub2.x0.n                  -3.82806e-19
+xalu.xbsub2.n1                            1.62
+xalu.xbsub2.x1.n                 -1.23577e-250
+xalu.xbsub2.n2                            1.62
+xalu.xbsub2.x2.n                 -1.23577e-250
+xalu.bs2                           6.36908e-08
+xalu.xbsub2.x3.n                   3.18454e-08
+xalu.xfa2.x0.n0                           1.62
+xalu.xfa2.x0.x0.n                 -1.48507e-19
+xalu.xfa2.x0.n1                           1.62
+xalu.xfa2.x0.x1.n                 5.94455e-247
+xalu.xfa2.x0.n2                           1.62
+xalu.xfa2.x0.x2.n                 5.94458e-247
+xalu.xfa2.p                        6.36908e-08
+xalu.xfa2.x0.x3.n                  3.18454e-08
+xalu.xfa2.x1.n0                           1.62
+xalu.xfa2.x1.x0.n                 -2.37666e-18
+xalu.xfa2.x1.n1                           1.62
+xalu.xfa2.x1.x1.n                -1.88459e-208
+xalu.xfa2.x1.n2                           1.62
+xalu.xfa2.x1.x2.n                 -3.4009e-226
+xalu.s2                            6.36908e-08
+xalu.xfa2.x1.x3.n                  3.18454e-08
+xalu.xfa2.x2.n                            1.62
+xalu.xfa2.x2.xn.n                 -1.48507e-19
+xalu.xfa2.g                        3.18454e-08
+xalu.xfa2.x3.n                            1.62
+xalu.xfa2.x3.xn.n                 -2.37666e-18
+xalu.xfa2.h                        3.18454e-08
+xalu.xfa2.x4.xn.n                         1.62
+xalu.xfa2.x4.n                            1.62
+xalu.c3                            3.18454e-08
+xalu.xand2.n                              1.62
+xalu.xand2.xn.n                   -3.82806e-19
+xalu.and2                          3.18454e-08
+xalu.xor2.xn.n                            1.62
+xalu.xor2.n                               1.62
+xalu.or2                           3.18454e-08
+xalu.xxor2.n0                             1.62
+xalu.xxor2.x0.n                   -3.82806e-19
+xalu.xxor2.n1                             1.62
+xalu.xxor2.x1.n                  -1.23577e-250
+xalu.xxor2.n2                             1.62
+xalu.xxor2.x2.n                  -1.23577e-250
+xalu.xor2                          6.36908e-08
+xalu.xxor2.x3.n                    3.18454e-08
+xalu.not2                                 1.62
+xalu.xlogic2.sn                           1.62
+xalu.xlogic2.n0                           1.62
+xalu.xlogic2.x0.n                 6.41129e-253
+xalu.xlogic2.n1                           1.62
+xalu.xlogic2.x1.n                  4.27937e-20
+xalu.l2                            6.36908e-08
+xalu.xlogic2.x2.n                  3.18454e-08
+xalu.xunary2.sn                           1.62
+xalu.xunary2.n0                           1.62
+xalu.xunary2.x0.n                 7.73204e-246
+xalu.xunary2.n1                           1.62
+xalu.xunary2.x1.n                      1.22767
+xalu.u2                            6.36908e-08
+xalu.xunary2.x2.n                  3.18454e-08
+xalu.xshift2.sn                           1.62
+xalu.xshift2.n0                           1.62
+xalu.xshift2.x0.n                -3.02271e-255
+xalu.xshift2.n1                           1.62
+a3                                           0
+xalu.xshift2.x1.n                 -3.82806e-19
+xalu.h2                            6.36908e-08
+xalu.xshift2.x2.n                  3.18454e-08
+xalu.xlo2.sn                              1.62
+xalu.xlo2.n0                              1.62
+xalu.xlo2.x0.n                    7.85529e-222
+xalu.xlo2.n1                              1.62
+xalu.xlo2.x1.n                    -1.21078e-18
+xalu.lo2                           6.36908e-08
+xalu.xlo2.x2.n                     3.18454e-08
+xalu.xhi2.sn                              1.62
+xalu.xhi2.n0                              1.62
+xalu.xhi2.x0.n                    5.47684e-252
+xalu.xhi2.n1                              1.62
+xalu.xhi2.x1.n                    -8.22401e-19
+xalu.hi2                           6.36908e-08
+xalu.xhi2.x2.n                     3.18454e-08
+xalu.xout2.sn                             1.62
+xalu.xout2.n0                             1.62
+xalu.xout2.x0.n                   4.51824e-189
+xalu.xout2.n1                             1.62
+xalu.xout2.x1.n                   -6.66082e-19
+y2                                 6.36908e-08
+xalu.xout2.x2.n                    3.18454e-08
+xalu.xbsub3.n0                            1.62
+b3                                           0
+xalu.xbsub3.x0.n                  -3.82806e-19
+xalu.xbsub3.n1                            1.62
+xalu.xbsub3.x1.n                 -1.23577e-250
+xalu.xbsub3.n2                            1.62
+xalu.xbsub3.x2.n                 -1.23577e-250
+xalu.bs3                           6.36908e-08
+xalu.xbsub3.x3.n                   3.18454e-08
+xalu.xfa3.x0.n0                           1.62
+xalu.xfa3.x0.x0.n                 -8.66273e-19
+xalu.xfa3.x0.n1                           1.62
+xalu.xfa3.x0.x1.n                 5.94455e-247
+xalu.xfa3.x0.n2                           1.62
+xalu.xfa3.x0.x2.n                 5.94458e-247
+xalu.xfa3.p                        6.36908e-08
+xalu.xfa3.x0.x3.n                  3.18454e-08
+xalu.xfa3.x1.n0                           1.62
+xalu.xfa3.x1.x0.n                  8.71835e-19
+xalu.xfa3.x1.n1                           1.62
+xalu.xfa3.x1.x1.n                -3.41133e-199
+xalu.xfa3.x1.n2                           1.62
+xalu.xfa3.x1.x2.n                -3.76926e-229
+xalu.s3                            6.36908e-08
+xalu.xfa3.x1.x3.n                  3.18454e-08
+xalu.xfa3.x2.n                            1.62
+xalu.xfa3.x2.xn.n                 -8.66273e-19
+xalu.xfa3.g                        3.18454e-08
+xalu.xfa3.x3.n                            1.62
+xalu.xfa3.x3.xn.n                  8.71835e-19
+xalu.xfa3.h                        3.18454e-08
+xalu.xfa3.x4.xn.n                         1.62
+xalu.xfa3.x4.n                            1.62
+xalu.c4                            3.18454e-08
+xalu.xand3.n                              1.62
+xalu.xand3.xn.n                   -3.82806e-19
+xalu.and3                          3.18454e-08
+xalu.xor3.xn.n                            1.62
+xalu.xor3.n                               1.62
+xalu.or3                           3.18454e-08
+xalu.xxor3.n0                             1.62
+xalu.xxor3.x0.n                   -3.82806e-19
+xalu.xxor3.n1                             1.62
+xalu.xxor3.x1.n                  -1.23577e-250
+xalu.xxor3.n2                             1.62
+xalu.xxor3.x2.n                  -1.23577e-250
+xalu.xor3                          6.36908e-08
+xalu.xxor3.x3.n                    3.18454e-08
+xalu.not3                                 1.62
+xalu.xlogic3.sn                           1.62
+xalu.xlogic3.n0                           1.62
+xalu.xlogic3.x0.n                 6.41129e-253
+xalu.xlogic3.n1                           1.62
+xalu.xlogic3.x1.n                 -8.49802e-20
+xalu.l3                            6.36908e-08
+xalu.xlogic3.x2.n                  3.18454e-08
+xalu.xunary3.sn                           1.62
+xalu.xunary3.n0                           1.62
+xalu.xunary3.x0.n                 7.73204e-246
+xalu.xunary3.n1                           1.62
+xalu.xunary3.x1.n                      1.22767
+xalu.u3                            6.36908e-08
+xalu.xunary3.x2.n                  3.18454e-08
+xalu.xshift3.sn                           1.62
+xalu.xshift3.n0                           1.62
+xalu.xshift3.x0.n                 -3.0227e-255
+xalu.xshift3.n1                           1.62
+a4                                           0
+xalu.xshift3.x1.n                 -3.82806e-19
+xalu.h3                            6.36908e-08
+xalu.xshift3.x2.n                  3.18454e-08
+xalu.xlo3.sn                              1.62
+xalu.xlo3.n0                              1.62
+xalu.xlo3.x0.n                   -1.40294e-211
+xalu.xlo3.n1                              1.62
+xalu.xlo3.x1.n                    -2.15165e-18
+xalu.lo3                           6.36908e-08
+xalu.xlo3.x2.n                     3.18454e-08
+xalu.xhi3.sn                              1.62
+xalu.xhi3.n0                              1.62
+xalu.xhi3.x0.n                    5.47684e-252
+xalu.xhi3.n1                              1.62
+xalu.xhi3.x1.n                    -8.22401e-19
+xalu.hi3                           6.36908e-08
+xalu.xhi3.x2.n                     3.18454e-08
+xalu.xout3.sn                             1.62
+xalu.xout3.n0                             1.62
+xalu.xout3.x0.n                  -3.24162e-233
+xalu.xout3.n1                             1.62
+xalu.xout3.x1.n                   -2.26982e-19
+y3                                 6.36908e-08
+xalu.xout3.x2.n                    3.18454e-08
+xalu.xbsub4.n0                            1.62
+b4                                           0
+xalu.xbsub4.x0.n                  -3.82806e-19
+xalu.xbsub4.n1                            1.62
+xalu.xbsub4.x1.n                 -1.23577e-250
+xalu.xbsub4.n2                            1.62
+xalu.xbsub4.x2.n                 -1.23577e-250
+xalu.bs4                           6.36908e-08
+xalu.xbsub4.x3.n                   3.18454e-08
+xalu.xfa4.x0.n0                           1.62
+xalu.xfa4.x0.x0.n                 -1.20004e-18
+xalu.xfa4.x0.n1                           1.62
+xalu.xfa4.x0.x1.n                 5.94455e-247
+xalu.xfa4.x0.n2                           1.62
+xalu.xfa4.x0.x2.n                 5.94458e-247
+xalu.xfa4.p                        6.36908e-08
+xalu.xfa4.x0.x3.n                  3.18454e-08
+xalu.xfa4.x1.n0                           1.62
+xalu.xfa4.x1.x0.n                 -1.51019e-18
+xalu.xfa4.x1.n1                           1.62
+xalu.xfa4.x1.x1.n                -9.87987e-198
+xalu.xfa4.x1.n2                           1.62
+xalu.xfa4.x1.x2.n                 1.96651e-227
+xalu.s4                            6.36908e-08
+xalu.xfa4.x1.x3.n                  3.18454e-08
+xalu.xfa4.x2.n                            1.62
+xalu.xfa4.x2.xn.n                 -1.20004e-18
+xalu.xfa4.g                        3.18454e-08
+xalu.xfa4.x3.n                            1.62
+xalu.xfa4.x3.xn.n                 -1.51019e-18
+xalu.xfa4.h                        3.18454e-08
+xalu.xfa4.x4.xn.n                         1.62
+xalu.xfa4.x4.n                            1.62
+xalu.c5                            3.18454e-08
+xalu.xand4.n                              1.62
+xalu.xand4.xn.n                   -3.82806e-19
+xalu.and4                          3.18454e-08
+xalu.xor4.xn.n                            1.62
+xalu.xor4.n                               1.62
+xalu.or4                           3.18454e-08
+xalu.xxor4.n0                             1.62
+xalu.xxor4.x0.n                   -3.82806e-19
+xalu.xxor4.n1                             1.62
+xalu.xxor4.x1.n                  -1.23577e-250
+xalu.xxor4.n2                             1.62
+xalu.xxor4.x2.n                  -1.23577e-250
+xalu.xor4                          6.36908e-08
+xalu.xxor4.x3.n                    3.18454e-08
+xalu.not4                                 1.62
+xalu.xlogic4.sn                           1.62
+xalu.xlogic4.n0                           1.62
+xalu.xlogic4.x0.n                 6.41129e-253
+xalu.xlogic4.n1                           1.62
+xalu.xlogic4.x1.n                 -8.49802e-20
+xalu.l4                            6.36908e-08
+xalu.xlogic4.x2.n                  3.18454e-08
+xalu.xunary4.sn                           1.62
+xalu.xunary4.n0                           1.62
+xalu.xunary4.x0.n                 7.73204e-246
+xalu.xunary4.n1                           1.62
+xalu.xunary4.x1.n                      1.22767
+xalu.u4                            6.36908e-08
+xalu.xunary4.x2.n                  3.18454e-08
+xalu.xshift4.sn                           1.62
+xalu.xshift4.n0                           1.62
+xalu.xshift4.x0.n                -3.02271e-255
+xalu.xshift4.n1                           1.62
+a5                                           0
+xalu.xshift4.x1.n                 -3.82806e-19
+xalu.h4                            6.36908e-08
+xalu.xshift4.x2.n                  3.18454e-08
+xalu.xlo4.sn                              1.62
+xalu.xlo4.n0                              1.62
+xalu.xlo4.x0.n                   -1.20377e-232
+xalu.xlo4.n1                              1.62
+xalu.xlo4.x1.n                    -2.15165e-18
+xalu.lo4                           6.36908e-08
+xalu.xlo4.x2.n                     3.18454e-08
+xalu.xhi4.sn                              1.62
+xalu.xhi4.n0                              1.62
+xalu.xhi4.x0.n                    5.47684e-252
+xalu.xhi4.n1                              1.62
+xalu.xhi4.x1.n                    -8.22401e-19
+xalu.hi4                           6.36908e-08
+xalu.xhi4.x2.n                     3.18454e-08
+xalu.xout4.sn                             1.62
+xalu.xout4.n0                             1.62
+xalu.xout4.x0.n                  -1.97902e-220
+xalu.xout4.n1                             1.62
+xalu.xout4.x1.n                   -5.61547e-20
+y4                                 6.36908e-08
+xalu.xout4.x2.n                    3.18454e-08
+xalu.xbsub5.n0                            1.62
+b5                                           0
+xalu.xbsub5.x0.n                  -3.82806e-19
+xalu.xbsub5.n1                            1.62
+xalu.xbsub5.x1.n                 -1.23577e-250
+xalu.xbsub5.n2                            1.62
+xalu.xbsub5.x2.n                 -1.23577e-250
+xalu.bs5                           6.36908e-08
+xalu.xbsub5.x3.n                   3.18454e-08
+xalu.xfa5.x0.n0                           1.62
+xalu.xfa5.x0.x0.n                 -1.20004e-18
+xalu.xfa5.x0.n1                           1.62
+xalu.xfa5.x0.x1.n                 5.94455e-247
+xalu.xfa5.x0.n2                           1.62
+xalu.xfa5.x0.x2.n                 5.94458e-247
+xalu.xfa5.p                        6.36908e-08
+xalu.xfa5.x0.x3.n                  3.18454e-08
+xalu.xfa5.x1.n0                           1.62
+xalu.xfa5.x1.x0.n                 -3.04431e-19
+xalu.xfa5.x1.n1                           1.62
+xalu.xfa5.x1.x1.n                -1.77605e-197
+xalu.xfa5.x1.n2                           1.62
+xalu.xfa5.x1.x2.n                  1.8913e-227
+xalu.s5                            6.36908e-08
+xalu.xfa5.x1.x3.n                  3.18454e-08
+xalu.xfa5.x2.n                            1.62
+xalu.xfa5.x2.xn.n                 -1.20004e-18
+xalu.xfa5.g                        3.18454e-08
+xalu.xfa5.x3.n                            1.62
+xalu.xfa5.x3.xn.n                 -3.04431e-19
+xalu.xfa5.h                        3.18454e-08
+xalu.xfa5.x4.xn.n                         1.62
+xalu.xfa5.x4.n                            1.62
+xalu.c6                            3.18454e-08
+xalu.xand5.n                              1.62
+xalu.xand5.xn.n                   -3.82806e-19
+xalu.and5                          3.18454e-08
+xalu.xor5.xn.n                            1.62
+xalu.xor5.n                               1.62
+xalu.or5                           3.18454e-08
+xalu.xxor5.n0                             1.62
+xalu.xxor5.x0.n                   -3.82806e-19
+xalu.xxor5.n1                             1.62
+xalu.xxor5.x1.n                  -1.23577e-250
+xalu.xxor5.n2                             1.62
+xalu.xxor5.x2.n                  -1.23577e-250
+xalu.xor5                          6.36908e-08
+xalu.xxor5.x3.n                    3.18454e-08
+xalu.not5                                 1.62
+xalu.xlogic5.sn                           1.62
+xalu.xlogic5.n0                           1.62
+xalu.xlogic5.x0.n                 6.41129e-253
+xalu.xlogic5.n1                           1.62
+xalu.xlogic5.x1.n                 -8.49802e-20
+xalu.l5                            6.36908e-08
+xalu.xlogic5.x2.n                  3.18454e-08
+xalu.xunary5.sn                           1.62
+xalu.xunary5.n0                           1.62
+xalu.xunary5.x0.n                 7.73204e-246
+xalu.xunary5.n1                           1.62
+xalu.xunary5.x1.n                      1.22767
+xalu.u5                            6.36908e-08
+xalu.xunary5.x2.n                  3.18454e-08
+xalu.xshift5.sn                           1.62
+xalu.xshift5.n0                           1.62
+xalu.xshift5.x0.n                 -3.0227e-255
+xalu.xshift5.n1                           1.62
+a6                                           0
+xalu.xshift5.x1.n                 -3.82806e-19
+xalu.h5                            6.36908e-08
+xalu.xshift5.x2.n                  3.18454e-08
+xalu.xlo5.sn                              1.62
+xalu.xlo5.n0                              1.62
+xalu.xlo5.x0.n                   -8.74272e-233
+xalu.xlo5.n1                              1.62
+xalu.xlo5.x1.n                    -2.15165e-18
+xalu.lo5                           6.36908e-08
+xalu.xlo5.x2.n                     3.18454e-08
+xalu.xhi5.sn                              1.62
+xalu.xhi5.n0                              1.62
+xalu.xhi5.x0.n                    5.47684e-252
+xalu.xhi5.n1                              1.62
+xalu.xhi5.x1.n                    -8.22401e-19
+xalu.hi5                           6.36908e-08
+xalu.xhi5.x2.n                     3.18454e-08
+xalu.xout5.sn                             1.62
+xalu.xout5.n0                             1.62
+xalu.xout5.x0.n                   8.00096e-196
+xalu.xout5.n1                             1.62
+xalu.xout5.x1.n                   -1.65782e-19
+y5                                 6.36908e-08
+xalu.xout5.x2.n                    3.18454e-08
+xalu.xbsub6.n0                            1.62
+b6                                           0
+xalu.xbsub6.x0.n                  -3.82806e-19
+xalu.xbsub6.n1                            1.62
+xalu.xbsub6.x1.n                 -1.23577e-250
+xalu.xbsub6.n2                            1.62
+xalu.xbsub6.x2.n                 -1.23577e-250
+xalu.bs6                           6.36908e-08
+xalu.xbsub6.x3.n                   3.18454e-08
+xalu.xfa6.x0.n0                           1.62
+xalu.xfa6.x0.x0.n                 -1.20004e-18
+xalu.xfa6.x0.n1                           1.62
+xalu.xfa6.x0.x1.n                 5.94455e-247
+xalu.xfa6.x0.n2                           1.62
+xalu.xfa6.x0.x2.n                 5.94458e-247
+xalu.xfa6.p                        6.36908e-08
+xalu.xfa6.x0.x3.n                  3.18454e-08
+xalu.xfa6.x1.n0                           1.62
+xalu.xfa6.x1.x0.n                 -1.60105e-18
+xalu.xfa6.x1.n1                           1.62
+xalu.xfa6.x1.x1.n                -1.69649e-197
+xalu.xfa6.x1.n2                           1.62
+xalu.xfa6.x1.x2.n                 1.89132e-227
+xalu.s6                            6.36908e-08
+xalu.xfa6.x1.x3.n                  3.18454e-08
+xalu.xfa6.x2.n                            1.62
+xalu.xfa6.x2.xn.n                 -1.20004e-18
+xalu.xfa6.g                        3.18454e-08
+xalu.xfa6.x3.n                            1.62
+xalu.xfa6.x3.xn.n                 -1.60105e-18
+xalu.xfa6.h                        3.18454e-08
+xalu.xfa6.x4.xn.n                         1.62
+xalu.xfa6.x4.n                            1.62
+xalu.c7                            3.18454e-08
+xalu.xand6.n                              1.62
+xalu.xand6.xn.n                   -3.82806e-19
+xalu.and6                          3.18454e-08
+xalu.xor6.xn.n                            1.62
+xalu.xor6.n                               1.62
+xalu.or6                           3.18454e-08
+xalu.xxor6.n0                             1.62
+xalu.xxor6.x0.n                   -3.82806e-19
+xalu.xxor6.n1                             1.62
+xalu.xxor6.x1.n                  -1.23577e-250
+xalu.xxor6.n2                             1.62
+xalu.xxor6.x2.n                  -1.23577e-250
+xalu.xor6                          6.36908e-08
+xalu.xxor6.x3.n                    3.18454e-08
+xalu.not6                                 1.62
+xalu.xlogic6.sn                           1.62
+xalu.xlogic6.n0                           1.62
+xalu.xlogic6.x0.n                 6.41129e-253
+xalu.xlogic6.n1                           1.62
+xalu.xlogic6.x1.n                 -8.49802e-20
+xalu.l6                            6.36908e-08
+xalu.xlogic6.x2.n                  3.18454e-08
+xalu.xunary6.sn                           1.62
+xalu.xunary6.n0                           1.62
+xalu.xunary6.x0.n                 7.73204e-246
+xalu.xunary6.n1                           1.62
+xalu.xunary6.x1.n                      1.22767
+xalu.u6                            6.36908e-08
+xalu.xunary6.x2.n                  3.18454e-08
+xalu.xshift6.sn                           1.62
+xalu.xshift6.n0                           1.62
+xalu.xshift6.x0.n                 -3.0227e-255
+xalu.xshift6.n1                           1.62
+a7                                           0
+xalu.xshift6.x1.n                 -3.82806e-19
+xalu.h6                            6.36908e-08
+xalu.xshift6.x2.n                  3.18454e-08
+xalu.xlo6.sn                              1.62
+xalu.xlo6.n0                              1.62
+xalu.xlo6.x0.n                   -1.18617e-232
+xalu.xlo6.n1                              1.62
+xalu.xlo6.x1.n                    -2.15165e-18
+xalu.lo6                           6.36908e-08
+xalu.xlo6.x2.n                     3.18454e-08
+xalu.xhi6.sn                              1.62
+xalu.xhi6.n0                              1.62
+xalu.xhi6.x0.n                    5.47684e-252
+xalu.xhi6.n1                              1.62
+xalu.xhi6.x1.n                    -8.22401e-19
+xalu.hi6                           6.36908e-08
+xalu.xhi6.x2.n                     3.18454e-08
+xalu.xout6.sn                             1.62
+xalu.xout6.n0                             1.62
+xalu.xout6.x0.n                   3.01562e-195
+xalu.xout6.n1                             1.62
+xalu.xout6.x1.n                   -5.61547e-20
+y6                                 6.36908e-08
+xalu.xout6.x2.n                    3.18454e-08
+xalu.xbsub7.n0                            1.62
+b7                                           0
+xalu.xbsub7.x0.n                  -3.82806e-19
+xalu.xbsub7.n1                            1.62
+xalu.xbsub7.x1.n                 -1.23577e-250
+xalu.xbsub7.n2                            1.62
+xalu.xbsub7.x2.n                 -1.23577e-250
+xalu.bs7                           6.36908e-08
+xalu.xbsub7.x3.n                   3.18454e-08
+xalu.xfa7.x0.n0                           1.62
+xalu.xfa7.x0.x0.n                 -1.20004e-18
+xalu.xfa7.x0.n1                           1.62
+xalu.xfa7.x0.x1.n                 5.94455e-247
+xalu.xfa7.x0.n2                           1.62
+xalu.xfa7.x0.x2.n                 5.94458e-247
+xalu.xfa7.p                        6.36908e-08
+xalu.xfa7.x0.x3.n                  3.18454e-08
+xalu.xfa7.x1.n0                           1.62
+xalu.xfa7.x1.x0.n                 -2.70489e-18
+xalu.xfa7.x1.n1                           1.62
+xalu.xfa7.x1.x1.n                -1.70265e-197
+xalu.xfa7.x1.n2                           1.62
+xalu.xfa7.x1.x2.n                 1.89132e-227
+xalu.s7                            6.36908e-08
+xalu.xfa7.x1.x3.n                  3.18454e-08
+xalu.xfa7.x2.n                            1.62
+xalu.xfa7.x2.xn.n                 -1.20004e-18
+xalu.xfa7.g                        3.18454e-08
+xalu.xfa7.x3.n                            1.62
+xalu.xfa7.x3.xn.n                 -2.70489e-18
+xalu.xfa7.h                        3.18454e-08
+xalu.xfa7.x4.xn.n                         1.62
+xalu.xfa7.x4.n                            1.62
+xalu.c8                            3.18454e-08
+xalu.xand7.n                              1.62
+xalu.xand7.xn.n                   -3.82806e-19
+xalu.and7                          3.18454e-08
+xalu.xor7.xn.n                            1.62
+xalu.xor7.n                               1.62
+xalu.or7                           3.18454e-08
+xalu.xxor7.n0                             1.62
+xalu.xxor7.x0.n                   -3.82806e-19
+xalu.xxor7.n1                             1.62
+xalu.xxor7.x1.n                  -1.23577e-250
+xalu.xxor7.n2                             1.62
+xalu.xxor7.x2.n                  -1.23577e-250
+xalu.xor7                          6.36908e-08
+xalu.xxor7.x3.n                    3.18454e-08
+xalu.not7                                 1.62
+xalu.xlogic7.sn                           1.62
+xalu.xlogic7.n0                           1.62
+xalu.xlogic7.x0.n                 6.41129e-253
+xalu.xlogic7.n1                           1.62
+xalu.xlogic7.x1.n                  4.27937e-20
+xalu.l7                            6.36908e-08
+xalu.xlogic7.x2.n                  3.18454e-08
+xalu.xunary7.sn                           1.62
+xalu.xunary7.n0                           1.62
+xalu.xunary7.x0.n                 7.73204e-246
+xalu.xunary7.n1                           1.62
+xalu.xunary7.x1.n                      1.22767
+xalu.u7                            6.36908e-08
+xalu.xunary7.x2.n                  3.18454e-08
+xalu.xshift7.sn                           1.62
+xalu.xshift7.n0                           1.62
+xalu.xshift7.x0.n                -3.02271e-255
+xalu.xshift7.n1                           1.62
+xalu.xshift7.x1.n                 -3.82806e-19
+xalu.h7                            6.36908e-08
+xalu.xshift7.x2.n                  3.18454e-08
+xalu.xlo7.sn                              1.62
+xalu.xlo7.n0                              1.62
+xalu.xlo7.x0.n                   -6.19614e-233
+xalu.xlo7.n1                              1.62
+xalu.xlo7.x1.n                    -1.21078e-18
+xalu.lo7                           6.36908e-08
+xalu.xlo7.x2.n                     3.18454e-08
+xalu.xhi7.sn                              1.62
+xalu.xhi7.n0                              1.62
+xalu.xhi7.x0.n                    5.47684e-252
+xalu.xhi7.n1                              1.62
+xalu.xhi7.x1.n                    -8.22401e-19
+xalu.hi7                           6.36908e-08
+xalu.xhi7.x2.n                     3.18454e-08
+xalu.xout7.sn                             1.62
+xalu.xout7.n0                             1.62
+xalu.xout7.x0.n                     6.386e-196
+xalu.xout7.n1                             1.62
+xalu.xout7.x1.n                   -5.61547e-20
+y7                                 6.36908e-08
+xalu.xout7.x2.n                    3.18454e-08
+xalu.xarithlo.n                           1.62
+xalu.arith                                1.62
+xalu.xcarryarith.n                        1.62
+xalu.xcarryarith.xn.n                  1.22767
+xalu.ca                            3.18454e-08
+xalu.xshiftcarry.sn                       1.62
+xalu.xshiftcarry.n0                       1.62
+xalu.xshiftcarry.x0.n             -3.0227e-255
+xalu.xshiftcarry.n1                       1.62
+xalu.xshiftcarry.x1.n             -3.82806e-19
+xalu.cs                            6.36908e-08
+xalu.xshiftcarry.x2.n              3.18454e-08
+xalu.xshiften.n                           1.62
+xalu.xshiften.xn.n                -3.82806e-19
+xalu.sh                            3.18454e-08
+xalu.xcarryshift.n                        1.62
+xalu.xcarryshift.xn.n                5.351e-19
+xalu.ch                            3.18454e-08
+xalu.xcarry.xn.n                          1.62
+xalu.xcarry.n                             1.62
+carry                              3.18454e-08
+xalu.xoverraw.n0                          1.62
+xalu.xoverraw.x0.n                -2.78905e-18
+xalu.xoverraw.n1                          1.62
+xalu.xoverraw.x1.n                -5.2709e-208
+xalu.xoverraw.n2                          1.62
+xalu.xoverraw.x2.n                -5.2709e-208
+xalu.ov                            6.36908e-08
+xalu.xoverraw.x3.n                 3.18454e-08
+xalu.xoverflow.n                          1.62
+xalu.xoverflow.xn.n                    1.22767
+overflow                           3.18454e-08
+xalu.xzero1.xn.n                          1.62
+xalu.xzero1.n                             1.62
+xalu.z1                            3.18454e-08
+xalu.xzero2.xn.n                          1.62
+xalu.xzero2.n                             1.62
+xalu.z2                            3.18454e-08
+xalu.xzero3.xn.n                          1.62
+xalu.xzero3.n                             1.62
+xalu.z3                            3.18454e-08
+xalu.xzero4.xn.n                          1.62
+xalu.xzero4.n                             1.62
+xalu.z4                            3.18454e-08
+xalu.xzero5.xn.n                          1.62
+xalu.xzero5.n                             1.62
+xalu.z5                            3.18454e-08
+xalu.xzero6.xn.n                          1.62
+xalu.xzero6.n                             1.62
+xalu.z6                            3.18454e-08
+xalu.xzero7.xn.n                          1.62
+xalu.xzero7.n                             1.62
+xalu.z7                            3.18454e-08
+zero                                      1.62
+vop2#branch                                  0
+vop1#branch                                  0
+vop0#branch                                  0
+vb7#branch                                   0
+vb6#branch                                   0
+vb5#branch                                   0
+vb4#branch                                   0
+vb3#branch                                   0
+vb2#branch                                   0
+vb1#branch                                   0
+vb0#branch                                   0
+va7#branch                                   0
+va6#branch                                   0
+va5#branch                                   0
+va4#branch                                   0
+va3#branch                                   0
+va2#branch                                   0
+va1#branch                                   0
+va0#branch                                   0
+vdd#branch                        -1.13726e-08
+
+ Reference value :  6.24560e-09
+ Reference value :  1.48896e-08
+ Reference value :  2.43100e-08
+ Reference value :  3.19289e-08
+ Reference value :  3.93289e-08
+ Reference value :  4.50500e-08
+ Reference value :  5.11095e-08
+ Reference value :  5.91095e-08
+ Reference value :  6.31292e-08
+ Reference value :  6.77692e-08
+ Reference value :  7.02900e-08
+ Reference value :  7.24682e-08
+ Reference value :  7.80482e-08
+ Reference value :  8.30498e-08
+ Reference value :  8.85698e-08
+ Reference value :  9.15900e-08
+ Reference value :  9.59700e-08
+ Reference value :  1.00730e-07
+ Reference value :  1.05850e-07
+ Reference value :  1.10406e-07
+ Reference value :  1.15466e-07
+ Reference value :  1.20399e-07
+ Reference value :  1.25319e-07
+ Reference value :  1.28859e-07
+ Reference value :  1.31690e-07
+ Reference value :  1.34490e-07
+ Reference value :  1.38270e-07
+ Reference value :  1.40810e-07
+ Reference value :  1.44170e-07
+ Reference value :  1.48310e-07
+ Reference value :  1.51646e-07
+ Reference value :  1.56106e-07
+ Reference value :  1.60270e-07
+ Reference value :  1.65410e-07
+ Reference value :  1.70266e-07
+ Reference value :  1.73666e-07
+ Reference value :  1.78706e-07
+ Reference value :  1.83066e-07
+ Reference value :  1.84886e-07
+ Reference value :  1.87166e-07
+ Reference value :  1.89926e-07
+ Reference value :  1.91370e-07
+ Reference value :  1.94130e-07
+ Reference value :  1.97690e-07
+ Reference value :  2.00806e-07
+ Reference value :  2.04286e-07
+ Reference value :  2.08006e-07
+ Reference value :  2.10946e-07
+ Reference value :  2.14486e-07
+ Reference value :  2.18306e-07
+ Reference value :  2.20967e-07
+ Reference value :  2.24247e-07
+ Reference value :  2.27767e-07
+ Reference value :  2.31526e-07
+ Reference value :  2.38966e-07
+ Reference value :  2.45428e-07
+ Reference value :  2.51710e-07
+ Reference value :  2.60570e-07
+ Reference value :  2.70030e-07
+ Reference value :  2.78230e-07
+ Reference value :  2.85770e-07
+ Reference value :  2.93710e-07
+ Reference value :  3.01590e-07
+ Reference value :  3.10330e-07
+ Reference value :  3.19490e-07
+ Reference value :  3.28750e-07
+ Reference value :  3.37942e-07
+ Reference value :  3.46630e-07
+ Reference value :  3.55670e-07
+ Reference value :  3.64510e-07
+ Reference value :  3.73070e-07
+ Reference value :  3.81970e-07
+ Reference value :  3.90586e-07
+ Reference value :  4.00100e-07
+ Reference value :  4.09110e-07
+ Reference value :  4.16566e-07
+ Reference value :  4.23787e-07
+ Reference value :  4.31070e-07
+ Reference value :  4.37890e-07
+ Reference value :  4.45006e-07
+ Reference value :  4.51486e-07
+ Reference value :  4.54486e-07
+ Reference value :  4.60913e-07
+ Reference value :  4.68673e-07
+ Reference value :  4.75547e-07
+ Reference value :  4.80510e-07
+ Reference value :  4.86670e-07
+ Reference value :  4.93010e-07
+ Reference value :  4.97710e-07
+ Reference value :  5.00390e-07
+ Reference value :  5.07930e-07
+ Reference value :  5.14967e-07
+ Reference value :  5.22141e-07
+ Reference value :  5.27541e-07
+ Reference value :  5.31717e-07
+ Reference value :  5.37237e-07
+ Reference value :  5.42187e-07
+ Reference value :  5.48107e-07
+ Reference value :  5.53222e-07
+ Reference value :  5.59562e-07
+ Reference value :  5.63407e-07
+ Reference value :  5.68867e-07
+ Reference value :  5.72749e-07
+ Reference value :  5.76269e-07
+ Reference value :  5.80546e-07
+ Reference value :  5.87086e-07
+ Reference value :  5.93567e-07
+ Reference value :  6.00100e-07
+ Reference value :  6.06148e-07
+ Reference value :  6.10601e-07
+ Reference value :  6.13201e-07
+ Reference value :  6.16261e-07
+ Reference value :  6.19821e-07
+ Reference value :  6.21450e-07
+ Reference value :  6.24490e-07
+ Reference value :  6.28010e-07
+ Reference value :  6.30100e-07
+ Reference value :  6.31230e-07
+ Reference value :  6.33470e-07
+ Reference value :  6.35330e-07
+ Reference value :  6.38070e-07
+
+No. of Data Rows : 32389
+ngspice-47 done

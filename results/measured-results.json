@@ -1,0 +1,35 @@
+{
+  "model": "generic Level-1, spice/gates.cir",
+  "vdd": 1.8,
+  "temperature_c": 25,
+  "load_f": 1e-14,
+  "stimulus": "A=255; ADD; B0 20ns-high/40ns-period; slew=100ps",
+  "power_window_s": [
+    1e-08,
+    9e-08
+  ],
+  "delay_s": 5.251096805791988e-10,
+  "rise_delay_s": 5.251096805791988e-10,
+  "fall_delay_s": 5.129753901803154e-10,
+  "average_supply_power_w": 6.447065227945389e-05,
+  "functional_checks": [
+    {
+      "name": "functional_1p8_25",
+      "vdd": 1.8,
+      "temperature_c": 25,
+      "vectors_passed": 64
+    },
+    {
+      "name": "functional_1p62_85",
+      "vdd": 1.62,
+      "temperature_c": 85,
+      "vectors_passed": 64
+    },
+    {
+      "name": "functional_1p98_m20",
+      "vdd": 1.98,
+      "temperature_c": -20,
+      "vectors_passed": 64
+    }
+  ]
+}
